@@ -2,53 +2,33 @@
 <html lang="en">
 <link rel="stylesheet" href="css/style.css">
 <head>
-    <title>Resume</title>
+    <title> Online Calculator </title>
 </head>
 <body>
-<h1> Nadezhda Skulkina </h1>
+<script src="myscript.js"></script>
+<h1> Калькулятор квадратных уравнений </h1>
 
-<div class="polaroid">
-    <img src="my-photo.jpg" alt="photo">
+<div align="center" >
+        <form action="javascript:square_equation()">
+             <input id="square_a" type="text" value="0" size="2"> &middot;x&sup2 +
+             <input id="square_b" type="text" value="0" size="2"> &middot;x +
+             <input id="square_c" type="text" value="0" size="2"> = 0
+            <br>
+            <input id="square_sol" type="submit" value="Решить квадратное уравнение">
+            </br>
+        </form>
+    <form action="javascript:block_writing()">
+        <input type="submit" value="Заблокировать">
+    </form>
+    <table id="tbl">
+        <tr> <td class="firstcol" type="checkbox" id="one"> X<sub>1</sub> </td> <td> X<sub>2</sub>  </td>
+        </tr>
+    </table>
+</div>
+<div >
+
 </div>
 
-<table>
-    <col >
-    <tr> <td rowspan=3 class="firstcol"> Personal information: </td> <td> Address:  </td> <td> -, Nizhny Novgorod, Russia </td>
-    </tr>
-    <tr> <td> Phone number:  </td> <td> +7(909)297-83-15 </td>
-    </tr>
-    <tr> <td> E-mail:  </td> <td> skull.nadezhda@gmail.com </td>
-    </tr>
-    <tr> <td class="firstcol"> Date of birth:  </td> <td colspan=2> 20.11.1998 </td>
-    </tr>
-    <tr> <td class="firstcol"> Education:  </td> <td colspan=2 > 2016-2020: <br/>
-        Lobachevsky university, IITMM (Institute of Information technologies mathematics and mechanics), bachelor.<br/>
-        2020-Present:<br/>
-        Lobachevsky university, IITMM (Institute of Information technologies mathematics and mechanics), master.<br/>
-    </td>
-    <tr> <td class="firstcol"> Professional experience:  </td> <td colspan=2> -
-</td>
-    <tr> <td class="firstcol"> Technical skills: </td> <td colspan=2>
-    <ul>
-        <li>C skills</li>
-        <li>C++ skills</li>
-        <li>C# skills</li>
-        <li>OOP</li>
-    </ul>
-    </td>
-    <tr> <td class="firstcol"> Personal skills:  </td> <td colspan=2>
-    <ul>
-        <li>Self-organized</li>
-        <li>Able to work hard, under pressure</li>
-        <li>Communicative and energetic</li>
-        <li>Have good learning capability</li>
-    </ul>
-    </td>
-    <tr> <td class="firstcol"> Foreign languages:  </td> <td colspan=2> English upper-intermediate level
-    </td>
-    </tr>
-</table>
 
-<h6> Other info is available upon request </h6>
 </body>
 </html>
