@@ -1,8 +1,3 @@
-function deleteRow() {
-    this.parentElement.removeChild(this);
-    setColour();
-}
-
 function setColour() {
     rows = document.getElementById("tbl").getElementsByTagName("tr");
     for(var countRow = 0; countRow<rows.length; countRow++) {
@@ -11,6 +6,10 @@ function setColour() {
         else
             rows[countRow].style.backgroundColor = "#39cdcd";
     }
+}
+function deleteRow() {
+    this.parentElement.removeChild(this);
+    setColour();
 }
 
 function square_equation() {
@@ -21,7 +20,7 @@ function square_equation() {
     if (!Number.isFinite(+a) || !Number.isFinite(+b) || !Number.isFinite(+c))
         alert("Некорректный ввод!");
     else if (a==0 && b==0)
-        alert("Неверное равенство!");
+        alert("Не введены значения параметров!");
     else
     {
         if (a == 0)
