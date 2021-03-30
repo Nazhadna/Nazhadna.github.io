@@ -2,16 +2,19 @@ body {
     background: #e0ffff;
     font-family: Arial;
 }
+
 input {
     margin-top: 20px;
 }
+
 table {
+    table-layout: fixed;
     margin-top: 20px;
     background-color: #39cdcd;
-    table-layout: fixed;
     width: 50%;
     border: 2px double black;
-    border-collapse: collapse;}
+    border-collapse: collapse;
+}
 
 td {
     width: 50%;
