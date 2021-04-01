@@ -86,4 +86,4 @@ function block_writing() {
         document.getElementById("square_c").disabled = true;
         document.getElementById("square_sol").disabled = true;
     }
-}
+} 
