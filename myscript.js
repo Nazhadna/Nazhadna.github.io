@@ -2,9 +2,9 @@ function setColour() {
     rows = document.getElementById("tbl").getElementsByTagName("tr");
     for(var countRow = 0; countRow<rows.length; countRow++) {
         if ((countRow + 1) % 2 == 0)
-            rows[countRow].style.backgroundColor = "white";
+            rows[countRow].classList.add('firstRow');
         else
-            rows[countRow].style.backgroundColor = "#39cdcd";
+            rows[countRow].classList.add('secondRow');
     }
 }
 function deleteRow() {
@@ -16,11 +16,23 @@ function square_equation() {
     var a = document.getElementById("square_a").value;
     var b = document.getElementById("square_b").value;
     var c = document.getElementById("square_c").value;
+    var wrn = document.getElementById("warning");
+
+    if (wrn.childNodes.length > 1)
+        wrn.removeChild(wrn.childNodes[1]);
 
     if (!Number.isFinite(+a) || !Number.isFinite(+b) || !Number.isFinite(+c))
-        alert("Некорректный ввод!");
+    {
+        txt = "Некорректный ввод!";
+        var t = document.createTextNode(txt);
+        wrn.appendChild(t);
+    }
     else if (a==0 && b==0)
-        alert("Не введены значения параметров!");
+    {
+        txt = "Не введены значения параметров!";
+        var t = document.createTextNode(txt);
+        wrn.appendChild(t);
+    }
     else
     {
         if (a == 0)
