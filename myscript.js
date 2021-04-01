@@ -1,6 +1,7 @@
 function setColour() {
     rows = document.getElementById("tbl").getElementsByTagName("tr");
     for(var countRow = 0; countRow<rows.length; countRow++) {
+        rows[countRow].classList.remove(rows[countRow].classList.item(0));
         if ((countRow + 1) % 2 == 0)
             rows[countRow].classList.add('firstRow');
         else
