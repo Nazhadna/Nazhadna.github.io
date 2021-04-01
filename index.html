@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<head>
+    <title> Online Calculator </title>
+</head>
+<body>
+<script src="myscript.js"></script>
+<h1> Калькулятор квадратных уравнений </h1>
+
+<div align="center" >
+        <form action="javascript:square_equation()">
+             <input id="square_a" type="text" value="0" size="2"> &middot;x&sup2 +
+             <input id="square_b" type="text" value="0" size="2"> &middot;x +
+             <input id="square_c" type="text" value="0" size="2"> = 0
+            <br>
+            <input id="square_sol" type="submit" value="Решить квадратное уравнение">
+            </br>
+        </form>
+    <form action="javascript:block_writing()">
+        <input type="submit" value="Заблокировать">
+    </form>
+    <h2 id="warning"> </h2>
+    <table id="tbl">
+        <tr> <th> X<sub>1</sub> </th> <th> X<sub>2</sub> </th>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
